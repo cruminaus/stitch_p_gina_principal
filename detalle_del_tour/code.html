@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tour Detail Page</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0077B6",
+            "background-light": "#F5F5F5",
+            "background-dark": "#101c22",
+            "text-light": "#111618",
+            "text-dark": "#f0f0f0",
+            "subtle-light": "#F4E8D1",
+            "subtle-dark": "#2a3b47",
+            "accent": "#FFC107",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+  <div class="relative w-full flex-col group/design-root overflow-x-hidden">
+    <!-- Top App Bar -->
+        <header class="bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <a class="font-bold text-2xl font-display text-gray-800 dark:text-white" href="#">Turismo
+                            Chile</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a class="text-gray-800 dark:text-white hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../página_principal/code.html">Inicio</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../nosotros/code.html">Nosotros</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../traslados/code.html">Traslados</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../tours/code.html">Tours</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button aria-controls="mobile-menu" aria-expanded="false"
+                            class="bg-white dark:bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-primary"
+                            id="mobile-menu-button" type="button">
+                            <span class="sr-only">Open main menu</span>
+                            <span class="material-icons">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Inicio</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Nosotros</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Traslados</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Tours</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Contacto</a>
+                </div>
+            </div>
+        </header>
+    <main class="pb-28">
+      <!-- Header Image -->
+      <div class="@container">
+        <div class="@[480px]:px-4 @[480px]:py-3">
+          <div
+            class="flex min-h-80 w-full flex-col justify-end overflow-hidden bg-cover bg-center bg-no-repeat @[480px]:rounded-xl"
+            data-alt="Expansive view of the Moon Valley in Chile at sunset"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAshtSDGAGQcBvx7ajsCAYaupJwe7ReyV1vUy8v9gUDXY4AIRuiR3ZfrVjx7wrFXsF5O_7a98s3qROOJmXf9I7FrEMCE1F2riDrJz5q2dFuCqjSVloYz5p70DKF49GDx7_CtthQ92kQf50vHm8z0z0ExOuFwrGwqcOhqbpyToGX-9dMyPem6F42PZEXfuIPteLWIpgXCmeyS9X1_STR-4p-2v9YK_mqUr4113ebrSp4osvNGFdsWyF39Qah6to6CpNk5LTkbgxBowE");'>
+          </div>
+        </div>
+      </div>
+      <!-- Headline & Meta -->
+      <section>
+        <h1
+          class="px-4 pt-4 text-left text-[32px] font-bold leading-tight tracking-tighter text-text-light dark:text-text-dark">
+          Full Day Tour: Valle Del Elqui </h1>
+        <p class="px-4 pb-3 pt-1 text-base font-normal leading-normal text-gray-500 dark:text-gray-400">La Serena</p>
+      </section>
+      <!-- Stats -->
+      <section class="flex flex-wrap gap-4 p-4">
+        <div
+          class="flex flex-1 flex-col gap-2 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 min-w-[158px]">
+          <p class="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300">Duration</p>
+          <p class="text-2xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">8 Hours</p>
+        </div>
+        <div
+          class="flex flex-1 flex-col gap-2 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 min-w-[158px]">
+          <p class="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300">Language</p>
+          <p class="text-2xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">Spanish</p>
+        </div>
+        <div
+          class="flex flex-1 flex-col gap-2 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 min-w-[158px]">
+          <p class="text-sm font-medium leading-normal text-gray-600 dark:text-gray-300">Group Size</p>
+          <p class="text-2xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">Max 12</p>
+        </div>
+      </section>
+      <!-- Inclusions / Exclusions -->
+      <section class="space-y-4 px-4">
+        <div class="rounded-xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+          <h3 class="flex items-center gap-3 border-b border-gray-200 p-4 text-lg font-bold dark:border-gray-700">
+            <span class="material-symbols-outlined text-green-500">check_circle</span>What's Included
+          </h3>
+          <ul class="space-y-3 p-4 text-gray-700 dark:text-gray-300">
+            <li class="flex items-start gap-3"><span
+                class="material-symbols-outlined mt-0.5 text-sm">check</span>Professional Guide</li>
+            <li class="flex items-start gap-3"><span
+                class="material-symbols-outlined mt-0.5 text-sm">check</span>Transportation in modern van</li>
+            <li class="flex items-start gap-3"><span
+                class="material-symbols-outlined mt-0.5 text-sm">check</span>Entrance fees to parks</li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-sm">check</span>Snacks
+              and water</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+          <h3 class="flex items-center gap-3 border-b border-gray-200 p-4 text-lg font-bold dark:border-gray-700">
+            <span class="material-symbols-outlined text-red-500">cancel</span>What's Not Included
+          </h3>
+          <ul class="space-y-3 p-4 text-gray-700 dark:text-gray-300">
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-sm">close</span>Lunch
+            </li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-sm">close</span>Tips
+              for the guide</li>
+            <li class="flex items-start gap-3"><span
+                class="material-symbols-outlined mt-0.5 text-sm">close</span>Personal expenses</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Activity Description -->
+      <section class="px-4 py-6">
+        <h2 class="pb-3 text-2xl font-bold">About the Activity</h2>
+        <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">Embark on an unforgettable journey through
+          the heart of the Atacama Desert. Witness the otherworldly landscapes of the Moon Valley, with its surreal salt
+          formations and towering sand dunes. As the sun sets, marvel at the vibrant colors painting the sky over Death
+          Valley, creating a truly magical experience. This tour offers a perfect blend of adventure, natural beauty,
+          and geological wonder.</p>
+      </section>
+      <!-- Itinerary -->
+      <section class="px-4 py-6">
+        <h2 class="pb-4 text-2xl font-bold">Itinerary</h2>
+        <div class="relative flex flex-col gap-6 border-l-2 border-dashed border-gray-300 pl-8 dark:border-gray-600">
+          <div class="absolute -left-[13px] h-full w-full">
+            <div class="sticky top-20">
+              <div
+                class="flex h-6 w-6 items-center justify-center rounded-full bg-primary ring-8 ring-background-light dark:ring-background-dark">
+                <span class="material-symbols-outlined text-sm text-white">directions_walk</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <p class="font-bold text-primary">9:00 AM</p>
+            <h4 class="font-bold">Hotel Pickup</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">We start our adventure by picking you up from your hotel
+              in San Pedro de Atacama.</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="font-bold text-primary">11:00 AM</p>
+            <h4 class="font-bold">Explore Moon Valley</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Hike through the stunning geological formations, caves,
+              and the Great Dune.</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="font-bold text-primary">1:00 PM</p>
+            <h4 class="font-bold">Lunch Break</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Enjoy a break to eat your packed lunch amidst the desert
+              scenery.</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="font-bold text-primary">3:00 PM</p>
+            <h4 class="font-bold">Visit Death Valley</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Discover the unique landscape of Mars Valley, perfect
+              for photos and short walks.</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="font-bold text-primary">5:00 PM</p>
+            <h4 class="font-bold">Sunset Viewing</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">We'll head to the Coyote Stone viewpoint to watch a
+              spectacular sunset over the desert.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Important Information -->
+      <section class="px-4 py-6">
+        <div
+          class="flex flex-col gap-4 rounded-xl border border-accent/50 bg-subtle-light p-4 dark:border-accent/60 dark:bg-subtle-dark">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-accent">info</span>
+            <h2 class="text-xl font-bold">Important Information</h2>
+          </div>
+          <ul class="list-disc space-y-2 pl-5 text-sm text-gray-800 dark:text-gray-200">
+            <li>Please wear comfortable walking shoes, sunscreen, and a hat.</li>
+            <li>Bring your own packed lunch and sufficient water.</li>
+            <li>Help us protect this unique environment: do not leave any trash on the trail.</li>
+            <li>Wildlife encounters are possible but not guaranteed. Please do not feed the animals.</li>
+            <li>This tour involves moderate walking and is not recommended for individuals with mobility issues.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Sticky Action Bar -->
+    <footer
+      class="fixed bottom-0 z-20 w-full border-t border-gray-200/80 bg-background-light/90 p-4 backdrop-blur-sm dark:border-gray-700/80 dark:bg-background-dark/90">
+      <div class="mx-auto flex max-w-4xl items-center justify-between gap-4">
+        <div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Price per person</p>
+          <p class="text-2xl font-bold text-text-light dark:text-text-dark">$75 USD</p>
+        </div>
+        <button
+          class="flex-shrink-0 rounded-full bg-primary px-8 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">Book
+          Now</button>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Nosotros - Turismo Chile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005A9C", // Updated primary color: elegant blue
+                        "secondary": "#C87550", // New secondary color: warm terracotta
+                        "background-light": "#F9F9F9", // Off-white background
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <!-- Top App Bar -->
+        <header class="bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <a class="font-bold text-2xl font-display text-gray-800 dark:text-white" href="#">Turismo
+                            Chile</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a class="text-gray-800 dark:text-white hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../página_principal/code.html">Inicio</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../nosotros/code.html">Nosotros</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../traslados/code.html">Traslados</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="../tours/code.html">Tours</a>
+                            <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                                href="">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button aria-controls="mobile-menu" aria-expanded="false"
+                            class="bg-white dark:bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-primary"
+                            id="mobile-menu-button" type="button">
+                            <span class="sr-only">Open main menu</span>
+                            <span class="material-icons">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Inicio</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Nosotros</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Traslados</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Tours</a>
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                        href="#">Contacto</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <div class="@container">
+                <div class="@[480px]:p-4">
+                    <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                        data-alt="Panoramic view of Torres del Paine National Park in Chile at sunrise, with jagged mountain peaks and a glacial lake."
+                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwOlnRWgm0vIsfbYCh0ychjdeNDahjLQtiOn40JjFNCDtYvXqXI_EbXlcdLDG8cjDisRIRikbK6XTjAwcM7nehALDuKP9o85Z3cGwT3qX-ocXY0_LZtfLe8VlOBLWlbfxv_mDPLf_Er6zOzNqkaoXVQXJx2Y2gguoZ9VwGZuMEmbrA3jRqXmfzJTcit_Sm58nsRZrKz4sTt9RtHKGc2TT2QzZl8dyBphAhO96UiXYYK5UQvMquZ5TPDi32IxsqlY3GAu-bomsewAM");'>
+                        <div class="flex flex-col gap-2 text-center">
+                            <h1
+                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                Nuestra Historia: Pasión por Chile</h1>
+                            <h2
+                                class="text-white text-base font-normal leading-normal max-w-xl @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal">
+                                Descubre el corazón de nuestro país con guías que aman lo que hacen.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature Section: Mission, Vision, Values -->
+            <div class="flex flex-col gap-10 px-4 py-10 @container md:py-16">
+                <div class="flex flex-col gap-4 max-w-3xl mx-auto text-center">
+                    <h2
+                        class="text-gray-900 dark:text-gray-100 tracking-tight text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                        Nuestro Propósito</h2>
+                    <p class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal">Creemos en ofrecer
+                        experiencias auténticas que conecten a los viajeros con la belleza y cultura de Chile de una
+                        manera segura y memorable.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-0 max-w-5xl mx-auto">
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 flex-col items-center text-center">
+                        <span
+                            class="material-symbols-outlined text-primary dark:text-primary text-3xl">rocket_launch</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight">Misión</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Proporcionar
+                                servicios de turismo y transporte excepcionales, mostrando lo mejor de Chile con
+                                seguridad y profesionalismo.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 flex-col items-center text-center">
+                        <span
+                            class="material-symbols-outlined text-primary dark:text-primary text-3xl">visibility</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight">Visión</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Ser la
+                                empresa líder en turismo personalizado, reconocida por nuestra calidad, sostenibilidad y
+                                profundo respeto por la cultura local.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 flex-col items-center text-center">
+                        <span class="material-symbols-outlined text-primary dark:text-primary text-3xl">favorite</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight">Valores</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Seguridad,
+                                Calidad, y Autenticidad son los pilares que guían cada uno de nuestros viajes y
+                                servicios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline Section -->
+            <div class="px-4 py-10 md:py-16 bg-white dark:bg-gray-900">
+                <div class="max-w-3xl mx-auto">
+                    <h2
+                        class="text-gray-900 dark:text-gray-100 text-2xl font-bold leading-tight tracking-tight px-0 pb-6 text-center">
+                        Nuestra Trayectoria</h2>
+                    <div class="grid grid-cols-[auto_1fr] gap-x-4">
+                        <div class="flex flex-col items-center gap-1 pt-3">
+                            <span class="material-symbols-outlined text-primary dark:text-primary">flag</span>
+                            <div class="w-0.5 bg-gray-200 dark:bg-gray-700 h-2 grow"></div>
+                        </div>
+                        <div class="flex flex-1 flex-col pb-8 pt-2.5">
+                            <p class="text-gray-900 dark:text-gray-100 text-base font-medium leading-normal">Fundación
+                                de la Empresa</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal">2015</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <div class="w-0.5 bg-gray-200 dark:bg-gray-700 h-2"></div>
+                            <span class="material-symbols-outlined text-primary dark:text-primary">explore</span>
+                            <div class="w-0.5 bg-gray-200 dark:bg-gray-700 h-2 grow"></div>
+                        </div>
+                        <div class="flex flex-1 flex-col pb-8">
+                            <p class="text-gray-900 dark:text-gray-100 text-base font-medium leading-normal">Expansión a
+                                Nuevas Regiones</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal">2018</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <div class="w-0.5 bg-gray-200 dark:bg-gray-700 h-2"></div>
+                            <span class="material-symbols-outlined text-primary dark:text-primary">verified</span>
+                            <div class="w-0.5 bg-gray-200 dark:bg-gray-700 h-2 grow"></div>
+                        </div>
+                        <div class="flex flex-1 flex-col pb-8">
+                            <p class="text-gray-900 dark:text-gray-100 text-base font-medium leading-normal">
+                                Certificación de Calidad Turística</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal">2022</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <div class="w-0.5 bg-gray-200 dark:bg-gray-700 h-2"></div>
+                            <span class="material-symbols-outlined text-primary dark:text-primary">groups</span>
+                        </div>
+                        <div class="flex flex-1 flex-col pb-8">
+                            <p class="text-gray-900 dark:text-gray-100 text-base font-medium leading-normal">Alcanzamos
+                                10,000 Viajeros Felices</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal">2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services Section -->
+            <div class="px-4 py-10 md:py-16">
+                <h2
+                    class="text-gray-900 dark:text-gray-100 text-2xl font-bold leading-tight tracking-tight text-center pb-8">
+                    Nuestros Servicios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Service Card: Tours -->
+                    <div
+                        class="flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md border border-gray-200 dark:border-gray-800">
+                        <img class="h-56 w-full object-cover"
+                            data-alt="A group of tourists hiking in the Atacama Desert in Chile, with a clear blue sky and mountains in the background."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW44XmKEN5gYo9Mo9ZgGyk9V36D96WGpAqxq8jJgBUVLglNHQl4kXg9rgYxnJ1UOhW0N0Fuv5En_dLANo3PYGIT4XaFVnc_9w6HOnWgJPfwg5Bsm1ahBnbIDj75_20o3bFdMxHo31evUNWOH45SFn1rBsQe-JMzCM_RY9jK4qNAiPcjUnlLoZejaq2Rc-R9TxJJCUB-YDI5N9ZM5Tg_qm2X3qrcTkJv478XDQQlLYCyt231J5yMj4BmKmgeW1A8-aFires_qZWNKg" />
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Tours Personalizados</h3>
+                            <p class="mt-2 text-gray-600 dark:text-gray-400 flex-1">Vive experiencias únicas y
+                                auténticas. Diseñamos tours a tu medida para que descubras la magia de Chile de forma
+                                segura y memorable.</p>
+                            <button
+                                class="mt-6 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-secondary text-white text-base font-bold leading-normal tracking-wide hover:bg-secondary/90 transition-colors">
+                                <span class="truncate">Ver Tours</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Service Card: Transfers -->
+                    <div
+                        class="flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md border border-gray-200 dark:border-gray-800">
+                        <img class="h-56 w-full object-cover"
+                            data-alt="A modern, clean van driving on a scenic road in Patagonia, Chile, symbolizing reliable passenger transfers."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQdmnGBf7jH5xd36_lV-DrIEjT4GENTSznTf7sC7DL0cxwHFTW1Sd28gmt5mkT8r75Ryf7U619Bw9e83PJPn-0A0mTIawKMvj9XmUiTXdgpBJXjkovDUWIx3Ae9XBNjBn40p7gIsU9xI92G6XboSD4o7AhzwacBBkfBt0mIIosIhI0JoaCqx2aYfYsmfgpPvxlvkiS97Ii0f-HU0e7ChbrX2fRV7fYNffm3CjFd9OXhkWX9SruuIeAJPgb4XA2EQER4C97rdT_AYI" />
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Traslados de Pasajeros</h3>
+                            <p class="mt-2 text-gray-600 dark:text-gray-400 flex-1">Ofrecemos un servicio de transporte
+                                confiable, cómodo y profesional. Viaja con tranquilidad a tu destino, ya sea aeropuerto,
+                                hotel o excursión.</p>
+                            <button
+                                class="mt-6 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-secondary text-white text-base font-bold leading-normal tracking-wide hover:bg-secondary/90 transition-colors">
+                                <span class="truncate">Saber Más</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Banner -->
+            <div class="px-4 py-10 @container" id="contacto">
+                <div class="flex min-h-[360px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center"
+                    data-alt="Abstract gradient blending the blue and terracotta colors of the brand."
+                    style="background-color: #005A9C;">
+                    <div class="flex flex-col gap-4">
+                        <h2
+                            class="text-white text-3xl font-black leading-tight tracking-[-0.033em] @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                            ¿Listo para la Aventura?</h2>
+                        <p class="text-white/90 text-base font-normal leading-normal max-w-lg @[480px]:text-lg">
+                            Contáctanos y comencemos a planificar tu próximo viaje inolvidable por Chile.</p>
+                    </div>
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-secondary text-white text-base font-bold leading-normal tracking-wide hover:bg-secondary/90 transition-colors">
+                        <span class="truncate">Explora Nuestros Servicios</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

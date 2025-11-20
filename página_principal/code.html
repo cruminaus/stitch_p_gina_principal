@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tour &amp; Transfer Services</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FBBF24", // amber-400, matches the 'Reserva' button
+            "background-light": "#F9FAFB", // gray-50
+            "background-dark": "#111827", // gray-900
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            body: ["Roboto", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem", // 8px
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-icons.md-36 {
+      font-size: 36px;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-body text-gray-700 dark:text-gray-300">
+  <div class="min-h-screen">
+    <header class="bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+      <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a class="font-bold text-2xl font-display text-gray-800 dark:text-white" href="#">Turismo Chile</a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a class="text-gray-800 dark:text-white hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                href="#">Inicio</a>
+              <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                href="../nosotros/code.html">Nosotros</a>
+              <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                href="../traslados/code.html">Traslados</a>
+              <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                href="../tours/code.html">Tours</a>
+              <a class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                href="">Contacto</a>
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <button aria-controls="mobile-menu" aria-expanded="false"
+              class="bg-white dark:bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-primary"
+              id="mobile-menu-button" type="button">
+              <span class="sr-only">Open main menu</span>
+              <span class="material-icons">menu</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="hidden md:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="#">Inicio</a>
+          <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+            href="#">Nosotros</a>
+          <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+            href="#">Traslados</a>
+          <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+            href="#">Tours</a>
+          <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+            href="#">Contacto</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="relative h-96 bg-gray-900 text-white flex items-center justify-center overflow-hidden">
+        <img alt="Scenic view of a vineyard tour" class="absolute inset-0 w-full h-full object-cover opacity-50"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOZT5IHfMorVTU8GlDToRCUXRjp1svTX3SVRXW0mL4WXM97Vy__V-d-e9ZNsWFjoLr3gzmXjEb-nvx9BB7IlFrVIYJO1wyfTstgCy4tfZTnSXJD4-pmmRyIql-pPnexaTFJMlxtlmlvsH82hOfHqd8eilCn8ifr1f2N9RDFM1FTxIN-apJ8HGbyl2WUyHDHnSpY8MBEKaYypR1fRQvAI0p0m5Rt2M8sem5Cq5u5yS2-oM-o1ZnIcGKQujOm1XPBbUxOrQwgVd_HHI" />
+        <div class="relative z-10 text-center p-4">
+          <h1 class="text-4xl md:text-6xl font-display font-bold">Descubre Chile con Nosotros</h1>
+          <p class="mt-4 text-lg md:text-xl">Tours y traslados privados a tu medida.</p>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24 bg-white dark:bg-gray-800/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="relative h-80 md:h-full rounded-lg overflow-hidden shadow-lg">
+              <img alt="Modern van driving on a scenic road in Chile" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg7dnyRBw640iKUvubyzFjdIAzZJP_D5CwYPR5INuNgx6SEaeFT6jEK331y-BJ1zwgaV-_Am8J__tcI8pT0K4mZjuYOY3UHarNlrgwDkKyE2qNMzm_cl6pCZFMQeSHNwpeke4iSc7lxuMqP23HW60GenqbddfMkrJtZjlXerCVgyBq-8hzpsWB8LiIW8vVRb_u-UKqDRJeKlS4Vg0j8Fv1IaUsHwYumpdSXWuAJXnuRkRbOUx4J2SaWlvKxijKw_vFcXp058RMNjU" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold tracking-tight font-display text-gray-900 dark:text-white sm:text-4xl">
+                Servicio de Traslado de Pasajeros</h2>
+              <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Viaja con la comodidad, seguridad y puntualidad
+                que mereces. Ofrecemos soluciones de transporte a medida, tanto para <span
+                  class="font-semibold text-primary">empresas</span> como para <span
+                  class="font-semibold text-primary">particulares</span>.</p>
+              <div class="mt-8 space-y-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <span class="material-icons text-primary md-36">shield</span>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">Seguridad y Confianza</h3>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Conductores profesionales y vehículos modernos para
+                      un viaje seguro.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <span class="material-icons text-primary md-36">schedule</span>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">Puntualidad Garantizada</h3>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Llegamos a tiempo, siempre. Tu itinerario es
+                      nuestra prioridad.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <span class="material-icons text-primary md-36">comfort</span>
+                  </div>
+                  <div class="ml-4">
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">Máximo Confort</h3>
+                    <p class="mt-1 text-gray-500 dark:text-gray-400">Disfruta de un viaje relajado en nuestra flota de
+                      vehículos equipados.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24 bg-gray-100 dark:bg-background-dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight font-display text-gray-900 dark:text-white sm:text-4xl">Nuestra
+              Trayectoria en Cifras</h2>
+            <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400">Años de experiencia reflejados en la
+              satisfacción de nuestros clientes.</p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+              <span class="material-icons text-primary text-4xl">local_shipping</span>
+              <p class="mt-2 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">1,200+</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Traslados Realizados</p>
+            </div>
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+              <span class="material-icons text-primary text-4xl">groups</span>
+              <p class="mt-2 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">4,800+</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Pasajeros Satisfechos</p>
+            </div>
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+              <span class="material-icons text-primary text-4xl">tour</span>
+              <p class="mt-2 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">350+</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Tours Conducidos</p>
+            </div>
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+              <span class="material-icons text-primary text-4xl">hiking</span>
+              <p class="mt-2 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">2,500+</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Personas en Tours</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight font-display text-gray-900 dark:text-white sm:text-4xl">
+              Nuestros Tours Destacados</h2>
+            <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400">Experiencias inolvidables diseñadas para
+              ti.</p>
+          </div>
+          <div class="max-w-6xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-4">
+              <div class="md:col-span-1 relative">
+                <img alt="Row of pisco bottles on a bar" class="w-full h-full object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC_hHqFZe1W6a2sIMhYx7oIo4fslYngjCb1IMGlxTKmbPN43OEi8CVO1rdOSC_QJA5C2oC40UgXTVcr3iWUJ5_HK4AEX4n7TWBIcZSwyDCIHyw54dpNuVkNry61b80FVm8YS9C3x7a7V-MGnREMgMLye2WaYilBbURbQudq_8GjSkJRAGdVEARk1x9DFOTXWiAzU_fmqXcFBQE1IYa1Qw9lvoCmmX2o4aGWCCoeBwcORkPfObG-YXYR887Ygsfu62EVts5WeeBC30" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full text-white">
+                  <p class="text-sm tracking-widest">TOUR</p>
+                  <h3 class="font-display text-4xl font-semibold italic">Capel</h3>
+                  <a class="inline-flex items-center justify-center mt-4 px-6 py-2 bg-primary text-gray-900 font-bold rounded-full text-sm hover:bg-amber-300 transition-colors"
+                    href="#">
+                    RESERVA
+                    <span class="material-icons text-base ml-2">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+              <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3">
+                <div class="bg-gray-600 dark:bg-gray-700 p-8 text-white">
+                  <h4 class="font-bold tracking-widest text-sm mb-6">INCLUYE</h4>
+                  <ul class="space-y-3 text-gray-300 dark:text-gray-400 text-sm">
+                    <li>Visita guiada al auditorio</li>
+                    <li>Museo del pisco</li>
+                    <li>Salón de las medallas</li>
+                    <li>Cata de piscos Capel doble destilado</li>
+                    <li>Regalo</li>
+                  </ul>
+                </div>
+                <div
+                  class="bg-gray-200 dark:bg-gray-800/50 p-8 text-gray-700 dark:text-gray-300 text-center flex flex-col justify-around">
+                  <div class="mb-8">
+                    <span class="material-icons md-36 text-gray-500 dark:text-gray-400">schedule</span>
+                    <h5 class="font-bold tracking-widest text-sm mt-2 text-gray-500 dark:text-gray-400">TIEMPO DE ESPERA
+                    </h5>
+                    <p class="mt-1 text-sm">15 minutos aproximados</p>
+                  </div>
+                  <div>
+                    <span class="material-icons md-36 text-gray-500 dark:text-gray-400">chat_bubble_outline</span>
+                    <h5 class="font-bold tracking-widest text-sm mt-2 text-gray-500 dark:text-gray-400">IDIOMA</h5>
+                    <p class="mt-1 text-sm">Español / Inglés</p>
+                  </div>
+                </div>
+                <div
+                  class="bg-gray-300 dark:bg-gray-800 p-8 text-gray-700 dark:text-gray-300 text-center flex flex-col justify-around">
+                  <div class="mb-8">
+                    <span class="material-icons md-36 text-gray-500 dark:text-gray-400">groups</span>
+                    <h5 class="font-bold tracking-widest text-sm mt-2 text-gray-500 dark:text-gray-400">CAPACIDAD</h5>
+                    <p class="mt-1 text-sm">30 personas</p>
+                  </div>
+                  <div>
+                    <span class="material-icons md-36 text-gray-500 dark:text-gray-400">payments</span>
+                    <h5 class="font-bold tracking-widest text-sm mt-2 text-gray-500 dark:text-gray-400">VALOR</h5>
+                    <p class="mt-1 text-sm">$5.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
