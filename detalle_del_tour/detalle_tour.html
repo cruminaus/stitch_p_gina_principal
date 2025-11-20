@@ -90,13 +90,13 @@
             <div class="hidden md:hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        href="#">Inicio</a>
+                        href="../home.html">Inicio</a>
                     <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
-                        href="#">Nosotros</a>
+                        href="../nosotros/nosotros.html">Nosotros</a>
                     <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
-                        href="#">Traslados</a>
+                        href="../traslados/traslado.html">Traslados</a>
                     <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
-                        href="#">Tours</a>
+                        href="../tours/tours.html">Tours</a>
                     <a class="text-gray-500 dark:text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
                         href="#">Contacto</a>
                 </div>
@@ -254,6 +254,14 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 
 </html>
